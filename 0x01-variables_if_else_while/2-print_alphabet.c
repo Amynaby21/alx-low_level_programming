@@ -13,7 +13,6 @@ int main(void)
 	{
 		int y = tolower(x);
 		putchar(y);
-
 	}
 
 	putchar('\n');

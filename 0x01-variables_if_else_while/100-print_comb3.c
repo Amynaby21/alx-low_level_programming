@@ -12,11 +12,11 @@ int main(void)
 
 	for (x = 48; x < 58; x++)
 	{
-		for (y = 48; y < 48; y++)
+		for (y = 48; y < 58; y++)
 		{
 			putchar(x);
 			putchar(y);
-			if (x != 58 && y != 58)
+			if (x == 57 && y == 57)
 			{
 				putchar(',');
 				putchar(' ');

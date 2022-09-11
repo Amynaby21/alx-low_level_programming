@@ -18,8 +18,10 @@ int main(void)
 			putchar(y);
 			if (x == 57 && y == 57)
 
-			putchar(',');
-			putchar(' ');
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');

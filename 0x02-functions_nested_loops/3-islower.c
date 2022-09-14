@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * _islower - Entry point
- *
+ * _islower - checks for a lowercase character
+ * @c: alphabet letter tested
+ *Return: Always 0
  */
 
 int _islower(int c)

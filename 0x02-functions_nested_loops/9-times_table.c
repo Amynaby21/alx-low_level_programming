@@ -12,8 +12,15 @@ void times_table(void)
 	int prod;
 
 	for (i = 0; i <= 9; i++)
+		_putchar('0');
+
+
 		for (j = 0; j <= 9; j++)
+		{
+			_putchar(',');
+			_putchar(' ');
 			prod = i * j;
+		}
 
 
 	for (i = 0; i <= 9; i++)

@@ -1,7 +1,8 @@
 #include "main.h"
 
-/** print_diagonal - Draws a diagonal line
- * @n: The nimbers of times the character \ is prited
+/**
+ *print_diagonal - Draws a diagonal line
+ *@n: The nimbers of times the character \ is printed
  */
 
 void print_diagonal(int n)

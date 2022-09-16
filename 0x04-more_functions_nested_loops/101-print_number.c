@@ -1,24 +1,22 @@
 #include "main.h"
 
 /**
- * print_integer: Prints an integer
+ * print_number: Prints an integer
  */
 
-void print_integer(int n)
+void print_number(int n)
 {
-	unsigned int i;
+	unsigned int i = n;
 
-	while (n < 0)
+	if (n < 0)
 	{
 		_putchar('-');
 		i = -i;
-		i--;
 	}
 
-	while ((i / 10) > 0)
+	if ((i / 10) > 0)
 	{
 		print_number(i / 10);
-		i++;
 	}
 	_putchar((i % 10) + '0');
 }

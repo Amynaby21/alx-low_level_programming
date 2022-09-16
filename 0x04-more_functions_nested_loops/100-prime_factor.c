@@ -9,27 +9,18 @@
 
 int main(void)
 {
-	int i, max = -1;
-	long int n;
+	long int n, i;
 
 	n = 612852475143;
 
-	while (n % 2 == 0)
+	for (i = 2; i <= n; i++)
 	{
-		max = 2;
-		n = n / 2;
-	}
-	for (i = 3; i <= sqrt(n); i++)
-	{
-		while (n % i == 0)
+		if (n % i == 0)
 		{
-			max = i;
-			n = n / i;
+			n /= i;
+			i--;
 		}
 	}
-	if (n > 2)
-	{
-		max = n;
-	}
-	return max;
+	printf("%ld\n", i);
+	return (0);
 }

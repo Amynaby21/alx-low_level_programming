@@ -2,11 +2,12 @@
 
 /**
  * print_number: Prints an integer
+ * @n: The number to be printed
  */
 
 void print_number(int n)
 {
-	unsigned int i = n;
+	unsigned int i;
 
 	if (n < 0)
 	{

@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strcpy - Copies a string to another
@@ -10,8 +11,7 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	char *ptr = dest;
-
-	_strcpy(ptr, src);
+	_strcpy(dest, src);
+	printf ("%s\n", dest);
 	return (dest);
 }

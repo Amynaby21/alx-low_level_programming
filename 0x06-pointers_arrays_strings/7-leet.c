@@ -3,27 +3,29 @@
 /**
  * leet - Encodes a string into 1337
  * 
- * @s: The string to encode
+ * @str: The string to encode
  *Return: The resulting string
  */
 
-char *leet(char *s)
+char *leet(char *str)
 {
-	int i;
+	int i = 0, j;
 	int lower[] = {'a', 'e', 'o', 't', 'l'};
 	int upper[] = {'A', 'E', 'O', 'T', 'L'};
 	int num[] = {'4', '3', '0', '7', '1'};
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (str[i])
 	{
-		for (i = 0; i < 5; i++)
+		for (j = 0; j <= 5; j++)
 		{
-			if (s[i] == lower[i] && s[i] == upper[i])
+			if (str[i] == lower[j] || str[i] == upper[j])
 			{
-				s[i] = num[i];
-				break;
+				str[i] = num[j];
 			}
 		}
+
+		i++;
 	}
-	return (s);
+
+	return (str);
 }

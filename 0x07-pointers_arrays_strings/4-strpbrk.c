@@ -5,19 +5,24 @@
  *_strpbrk - Locates the first occurence in a string of a character
  *
  *@s: The string to look into
- *@accept: The string to search for the set of bytes 
+ *@accept: The string to search for the set of bytes
  *
  *Return: accept or NULL
  */
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
+	unsigned int length1 = strlen(s);
+	unsigned int length2 = strlen(accept);
+	unsigned int i, j;
 
-	for (i = 0; s[i] >= '\0'; i++)
+	for (i = 0; i < length1; i++)
 	{
-		if (s[i] == accept[i])
-			return (s + i);
+		for (j  = 0; j < length2; j++)
+		{
+			if (s[i] == accept[j])
+				return (s + i);
+		}
 	}
 	return ('\0');
 }

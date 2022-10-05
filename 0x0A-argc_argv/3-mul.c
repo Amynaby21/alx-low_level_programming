@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- *main - Prints the number of arguments passed into the program
+ *main - Multiplies two numbers
  *
  *@argc: The number of arguments in the command line
  *@argv: An array of pointers to the arguments

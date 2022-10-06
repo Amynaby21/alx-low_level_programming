@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- *main - Prints the number of arguments passed into the program
+ *main - Adds positive numbers
  *
  *@argc: The number of arguments in the command line
  *@argv: An array of pointers to the arguments

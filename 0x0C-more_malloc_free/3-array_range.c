@@ -4,6 +4,7 @@
  *array_range - Creates an array of integers
  *
  *@min: The minimum value
+ *
  *@max: The maximum value
  *
  *Return: if min > max - NULL, if fails - NULL
@@ -22,10 +23,8 @@ int *array_range(int min, int max)
 
 	if (array == NULL)
 		return (NULL);
-	for(i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 		array[i] = min++;
 
 	return (array);
 }
-
-

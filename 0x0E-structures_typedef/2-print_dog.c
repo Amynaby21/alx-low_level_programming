@@ -1,4 +1,6 @@
 #include "dog.h"
+#include <stddef.h>
+#include <stdio.h>
 
 /**
  * print_dog - Prints the information about the dog
@@ -25,4 +27,3 @@ void print_dog(struct dog *d)
 	else
 		printf("Owner: (nil)\n");
 }
-

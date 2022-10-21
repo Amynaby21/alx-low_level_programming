@@ -4,7 +4,6 @@
  * list_len - Returns the number of elements in a list_t list
  *
  * @h: The linked list
- *
  * Return: The length of the link
  */
 

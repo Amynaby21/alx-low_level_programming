@@ -4,7 +4,7 @@ void before_main(void) __attribute__((constructor));
 
 /**
  * before_main - Executes a function that print a string before main
- *
+ *Return: Nothing
  */
 
 void before_main(void)

@@ -9,10 +9,10 @@
 size_t print_listint(const listint_t *h)
 {
 	size_t n = 0;
-
 	while (h != NULL)
 	{
 		n++;
+		putchar(n%10 + '0');
 		h = h->next;
 	}
 	return (n);

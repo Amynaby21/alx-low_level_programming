@@ -9,15 +9,14 @@
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	listint_t *cnOde = head;
 	unsigned int cnt = 0;
 
-	while (cnOde != NULL)
+	while (cnt < index)
 	{
-		if (cnt == index)
-			return (cnOde->next);
+		if (head == NULL)
+			return (NULL);
 		cnt++;
-		cnOde = cnOde->next;
+		head = head->next;
 	}
 	return (head);
 }

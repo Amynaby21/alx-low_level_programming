@@ -2,6 +2,7 @@
 
 /**
  * free_listint2 - Frees a linked list
+ * @head: A pointer to the first node
  */
 
 void free_listint2(listint_t **head)

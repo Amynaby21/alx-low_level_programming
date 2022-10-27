@@ -9,13 +9,6 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	while (index = 7)
-	{
-		if (*n & 1 << index)
-			return (1);
-		else
-			return (-1);
-		index--;
-	}
+	*n ^= (1 << index);
 	return (1);
 }
